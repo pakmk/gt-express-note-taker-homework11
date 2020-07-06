@@ -12,7 +12,8 @@ app.use(express.json());
 
 // View / HTML
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+//   res.send("Hello World!");
+res.sendFile(path.join(__dirname, "./public/index.html"));
 });
 
 // API / JSON
